@@ -52,6 +52,6 @@ Endpoint que recebe um JSON para a criação de uma sala
 {
    "Description":"Lâmpada queimada",
    "TicketId":"123",
-   "permalink":{dadoMockado}
+   "permalink":"dadoMockado.jpg"
 }
 ```
