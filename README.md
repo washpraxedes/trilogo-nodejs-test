@@ -36,3 +36,22 @@ Para dar início ao desafio, o candidato deve dar um fork no repositório e, ao 
 * Aplicação de boas práticas
 
 Os itens extras (opcionais) contarão positivamente na análise do seu desafio.
+
+Abaixo alguns endpoints que deverão ser implementados no desafio.
+
+### GET `/api/chatroomsbyuser?userId={userId}&limit={limit}&offset={offset}&term={term}`
+Esse endpoint recebe o código do usuário para listar salas
+
+### GET `/api/chatmessages/{ticketId}`
+Endpoint que realiza a consulta de mensagens de uma sala pelo _id_ do ticket correspondente
+
+### POST `/api/createchatroom`
+Endpoint que recebe um JSON para a criação de uma sala
+
+```json
+{
+   "Description":"Lâmpada queimada",
+   "TicketId":"123",
+   "permalink":{dadoMockado}
+}
+```
